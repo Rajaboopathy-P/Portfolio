@@ -2,7 +2,7 @@
 
 A modern and responsive portfolio website to showcase my skills, projects, and experience as an aspiring **Python Full Stack Developer**.
 
-🚀 **Live Demo:** https://rajaboopathy.vercel.app
+🚀 **Live Demo:** https://Rajaboopathy.vercel.app
 
 ---
 
