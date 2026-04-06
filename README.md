@@ -1,24 +1,55 @@
-### A clean portfolio template. (Readme will be updated soon)
+# 🌐 Personal Portfolio Website
 
-# Sections
+A modern and responsive portfolio website to showcase my skills, projects, and experience as an aspiring **Python Full Stack Developer**.
 
-- Home
-- Experience
-- Projects
-- Contact and Resume
+🚀 **Live Demo:** https://rajaboopathy.vercel.app
 
-# How To Use
+---
 
-- Clone this repository (or fork, then clone your fork :) )
-- Run `npm i`
-- Check it out using `npm start`
+## ✨ Features
 
-# How Do I Customize
+* Responsive design (Mobile + Desktop)
+* Clean and modern UI
+* Projects showcase section
+* Experience section
+* Contact section
+* Smooth animations
 
-- Replace `homepage` in package.json to your domain name or `https://<username>.github.io`
-- In `src/portfolio.js` you can add your personal portfolio details.
-- In `src/theme.js` you can change the theme colors. You can change between Light and Dark theme with the theme switch on the header.
+---
 
-# How to Deploy
+## 🛠️ Tech Stack
 
-I have used Vercel to host my portfolio. If you want to use GitHub Pages, just run `npm run build` and publish all the files in the `/build` folder to your repository.
+* HTML
+* CSS
+* JavaScript
+
+
+---
+
+## 🎨 Customization
+
+You can easily customize this portfolio:
+
+* Update personal details in `src/portfolio.js`
+* Modify theme colors in `src/theme.js`
+* Add your projects and experience
+
+---
+
+## 🚀 Deployment
+
+This project is deployed using **Vercel**.
+
+### 🔹 Steps to deploy:
+
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Click **Deploy**
+
+
+---
+
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
