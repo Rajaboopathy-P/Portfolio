@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaboopathy | Portfolio</title>
+    <link rel="icon" href="boopathy ring image.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="splash.html" class="logo">
+            <span class="logo-name">&lt;Rajaboopathy /&gt;</span>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html" class="homei">Home</a></li>
+            <li><a href="experience.html" class="xpi">Experience</a></li>
+            <li><a href="projects.html" class="projectsi">Projects</a></li>
+            <li><a href="contact.html" class="contacti">Contact and Resume</a></li>
+            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
+        </ul>
+    </header>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <main class="main" style="margin-top: 100px;">
+        <section id="contact" class="greet-main">
+            <div class="greeting-main" style="align-items: center;">
+                
+                <div class="greeting-image-div">
+                    <!-- Lottie animation of a developer working -->
+                    <lottie-player
+                        src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: auto; max-width: 500px;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+
+                <div class="greeting-text-div" style="text-align: left; margin-left: 5%;">
+                    <h1 class="greeting-text" style="font-size: 55px; margin-bottom: 20px;">Contact Me ☎️</h1>
+                    <p class="greeting-text-p" style="font-size: 22px;">
+                        You can contact me at the places mentioned below. I will try to get back to you as fast as I can.
+                    </p>
+                    
+                    <div class="social-media-div" style="margin-top: 30px; justify-content: flex-start;">
+                        <a href="https://github.com/Rajaboopathy-P" target="_blank" class="icon-button github"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rajaboopathy-p" target="_blank" class="icon-button linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:rajaboopathy825@gmail.com" class="icon-button google"><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/boopxth_y" target="_blank" class="icon-button instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <div class="button-greeting-div" style="margin-top: 40px; justify-content: flex-start;">
+                        <!-- Make sure to place a rajaboopathy-resume.pdf file in this folder -->
+                        <a href="Rajaboopathy_Resume.pdf" target="_blank" class="button">See My Resume</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <span class="heart">❤️</span> by Rajaboopathy P</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

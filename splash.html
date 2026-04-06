@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaboopathy | Portfolio</title>
+    <link rel="icon" href="boopathy ring image.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="splash-body">
+    <script>
+        if (localStorage.getItem('theme') === 'light-theme') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
+    <div class="logo_wrapper">
+        <div class="screen">
+            <div class="splash-loader-container">
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+                <div class="ball-loader"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Redirect to index.html after the animation finishes (about 5 seconds)
+        setTimeout(function() {
+            window.location.href = "index.html";
+        }, 3200);
+    </script>
+</body>
+</html>

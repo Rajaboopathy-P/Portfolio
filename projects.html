@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaboopathy | Portfolio</title>
+    <link rel="icon" href="boopathy ring image.png">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Devicon for Technology Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <a href="splash.html" class="logo">
+            <span class="logo-name">&lt;Rajaboopathy /&gt;</span>
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="index.html" class="homei">Home</a></li>
+            <li><a href="experience.html" class="xpi">Experience</a></li>
+            <li><a href="projects.html" class="projectsi">Projects</a></li>
+            <li><a href="contact.html" class="contacti">Contact and Resume</a></li>
+            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
+        </ul>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="main" style="margin-top: 50px;">
+        <section id="projects" style="display: block; width: 100%;">
+            
+            <!-- Restored user's layout cohesively with correct responsive order -->
+            <div class="greeting-main" style="margin-bottom: 50px;">
+                <div class="greeting-text-div">
+                    <h1 class="greeting-text" style="font-size: 55px; margin-bottom: 20px;">Projects</h1>
+                    <p class="greeting-text-p" style="font-size: 22px; max-width: 800px;">
+                        I am a proficient and skilled individual who has gained extensive knowledge and practical experience in developing projects. With a hands-on approach, I have successfully navigated through various technology stacks, showcasing my expertise in both frontend and backend development.
+                    </p>
+                </div>
+                
+                <div class="greeting-image-div">
+                    <!-- User's newly added Lottie animation -->
+                    <lottie-player
+                        src="https://assets7.lottiefiles.com/packages/lf20_3rwasyjy.json"
+                        background="transparent"
+                        speed="1"
+                        style="width: 100%; height: auto; max-width: 500px;"
+                        loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+            
+            <div class="project-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; width: 100%;">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card" onclick="window.open('https://github.com/Rajaboopathy-P', '_blank')" style="background-color: var(--bg-color); border: 1px solid rgba(134, 142, 150, 0.2); border-radius: 5px; padding: 2rem; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: all 0.2s ease-in-out;">
+                    <div>
+                        <div class="repo-name-div" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-book repo-icon" style="font-size: 20px; margin-right: 10px;"></i>
+                            <p class="repo-name" style="font-size: 22px; font-weight: 700; font-family: 'Poppins', sans-serif;">E-Commerce-App</p>
+                        </div>
+                        <p class="repo-description" style="font-size: 16px; color: var(--text-secondary); margin-bottom: 20px;">
+                            A fast, responsive web app built with React, focusing on smooth animations.
+                        </p>
+                    </div>
+                    <div class="repo-details" style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--text-secondary);">
+                        <div class="tech-stack-icons" style="display: flex; align-items: center; gap: 15px; font-size: 26px;">
+                            <i class="devicon-python-plain " title="Python" ></i>
+                            <i class="devicon-django-plain " title="Django" ></i>
+                            <i class="devicon-sqlite-plain " title="Sqlite" ></i>
+                        </div>
+                        <div class="github-stats" data-repo="E-Commerce-App" style="display: flex; gap: 15px;">
+                            <span><i class="far fa-star"></i> <span class="stars-count" style="font-family: monospace;">12</span></span>
+                            <span><i class="fas fa-code-branch"></i> <span class="forks-count" style="font-family: monospace;">3</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card" onclick="window.open('https://github.com/Rajaboopathy-P', '_blank')" style="background-color: var(--bg-color); border: 1px solid rgba(134, 142, 150, 0.2); border-radius: 5px; padding: 2rem; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: all 0.2s ease-in-out;">
+                    <div>
+                        <div class="repo-name-div" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-book repo-icon" style="font-size: 20px; margin-right: 10px;"></i>
+                            <p class="repo-name" style="font-size: 22px; font-weight: 700; font-family: 'Poppins', sans-serif;">Gym Management Website</p>
+                        </div>
+                        <p class="repo-description" style="font-size: 16px; color: var(--text-secondary); margin-bottom: 20px;">
+                            A responsive gym website designed to manage memberships, display workout programs, and allow users to book trainers. Built with a clean UI and optimized performance for a seamless user experience.
+                        </p>
+                    </div>
+                    <div class="repo-details" style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--text-secondary);">
+                        <div class="tech-stack-icons" style="display: flex; align-items: center; gap: 15px; font-size: 26px;">
+                            <i class="devicon-html5-plain " title="HTML5" ></i>
+                            <i class="devicon-css3-plain "  title="CSS3" ></i>
+                            <i class="devicon-javascript-plain " title="JavaScript" ></i>
+                        </div>
+                        <div class="github-stats" data-repo="Gym-Management-Website" style="display: flex; gap: 15px;">
+                            <span><i class="far fa-star"></i> <span class="stars-count" style="font-family: monospace;">8</span></span>
+                            <span><i class="fas fa-code-branch"></i> <span class="forks-count" style="font-family: monospace;">1</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card" onclick="window.open('https://github.com/Rajaboopathy-P', '_blank')" style="background-color: var(--bg-color); border: 1px solid rgba(134, 142, 150, 0.2); border-radius: 5px; padding: 2rem; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: all 0.2s ease-in-out;">
+                    <div>
+                        <div class="repo-name-div" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-book repo-icon" style="font-size: 20px; margin-right: 10px;"></i>
+                            <p class="repo-name" style="font-size: 22px; font-weight: 700; font-family: 'Poppins', sans-serif;">Portfolio</p>
+                        </div>
+                        <p class="repo-description" style="font-size: 16px; color: var(--text-secondary); margin-bottom: 20px;">
+                            The highly customizable portfolio project. Where you have full control to showcase your skills and experience through design elements and content.
+                        </p>
+                    </div>
+                    <div class="repo-details" style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--text-secondary);">
+                        <div class="tech-stack-icons" style="display: flex; align-items: center; gap: 15px; font-size: 26px;">
+                            <i class="devicon-html5-plain " title="HTML5" ></i>
+                            <i class="devicon-css3-plain "  title="CSS3" ></i>
+                            <i class="devicon-javascript-plain " title="JavaScript" ></i>
+                        </div>
+                        <div class="github-stats" data-repo="Portfolio" style="display: flex; gap: 15px;">
+                            <span><i class="far fa-star"></i> <span class="stars-count" style="font-family: monospace;">25</span></span>
+                            <span><i class="fas fa-code-branch"></i> <span class="forks-count" style="font-family: monospace;">10</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="project-card" onclick="window.open('https://indharajith-gym-website.vercel.app/', '_blank')" style="background-color: var(--bg-color); border: 1px solid rgba(134, 142, 150, 0.2); border-radius: 5px; padding: 2rem; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; height: 100%; transition: all 0.2s ease-in-out;">
+                    <div>
+                        <div class="repo-name-div" style="display: flex; align-items: center; margin-bottom: 10px;">
+                            <i class="fas fa-book repo-icon" style="font-size: 20px; margin-right: 10px;"></i>
+                            <p class="repo-name" style="font-size: 22px; font-weight: 700; font-family: 'Poppins', sans-serif;">Gym Website</p>
+                        </div>
+                        <p class="repo-description" style="font-size: 16px; color: var(--text-secondary); margin-bottom: 20px;">
+                            A responsive gym website with student registration and login functionality. Built using HTML, CSS, and JavaScript, focusing on clean UI and user interaction.
+                        </p>
+                    </div>
+                    <div class="repo-details" style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: var(--text-secondary);">
+                        <div class="tech-stack-icons" style="display: flex; align-items: center; gap: 15px; font-size: 26px;">
+                            <i class="devicon-html5-plain " title="HTML5" ></i>
+                            <i class="devicon-css3-plain "  title="CSS3" ></i>
+                            <i class="devicon-javascript-plain " title="JavaScript" ></i>
+                        </div>
+                        <div class="github-stats" data-repo="gym-website" style="display: flex; gap: 15px;">
+                            <span><i class="far fa-star"></i> <span class="stars-count" style="font-family: monospace;">5</span></span>
+                            <span><i class="fas fa-code-branch"></i> <span class="forks-count" style="font-family: monospace;">2</span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- More Projects Button -->
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="https://github.com/Rajaboopathy-P" target="_blank" class="button">More Projects(Github)</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with <span class="heart">❤️</span> by Rajaboopathy P</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
