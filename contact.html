@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajaboopathy | Portfolio</title>
-    <link rel="icon" href="boopathy ring image.png">
+    <title>Rajaboopathy | Contact Me</title>
+    <meta name="description" content="Get in touch with Rajaboopathy P for freelance projects, collaboration, or full-time opportunities.">
+    <link rel="icon" href="title.png">
     <link rel="stylesheet" href="style.css">
     
     <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
@@ -17,6 +18,11 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('theme') === 'light-theme') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
 
     <!-- Header / Navbar -->
     <header class="header">
@@ -29,21 +35,21 @@
             <li><a href="index.html" class="homei">Home</a></li>
             <li><a href="experience.html" class="xpi">Experience</a></li>
             <li><a href="projects.html" class="projectsi">Projects</a></li>
-            <li><a href="contact.html" class="contacti">Contact and Resume</a></li>
+            <li><a href="about.html" class="skillsi">About</a></li>
+            <li><a href="contact.html" class="contacti">Contact Me</a></li>
             <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
         </ul>
     </header>
 
     <!-- Contact Section -->
-    <!-- Contact Section -->
-    <main class="main" style="margin-top: 100px;">
+    <main class="main contact-main-container">
         <section id="contact" class="greet-main">
-            <div class="greeting-main" style="align-items: center;">
+            <div class="greeting-main">
                 
                 <div class="greeting-image-div">
                     <!-- Lottie animation of a developer working -->
                     <lottie-player
-                        src="https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json"
+                        src="./assets/lottie/lf20_qp1q7mct.json"
                         background="transparent"
                         speed="1"
                         style="width: 100%; height: auto; max-width: 500px;"
@@ -52,22 +58,22 @@
                     </lottie-player>
                 </div>
 
-                <div class="greeting-text-div" style="text-align: left; margin-left: 5%;">
-                    <h1 class="greeting-text" style="font-size: 55px; margin-bottom: 20px;">Contact Me ☎️</h1>
-                    <p class="greeting-text-p" style="font-size: 22px;">
+                <div class="greeting-text-div contact-text-div">
+                    <h1 class="greeting-text contact-title">Contact Me ☎️</h1>
+                    <p class="greeting-text-p contact-text-p">
                         You can contact me at the places mentioned below. I will try to get back to you as fast as I can.
                     </p>
                     
-                    <div class="social-media-div" style="margin-top: 30px; justify-content: flex-start;">
+                    <div class="social-media-div contact-social-media">
                         <a href="https://github.com/Rajaboopathy-P" target="_blank" class="icon-button github"><i class="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/rajaboopathy-p" target="_blank" class="icon-button linkedin"><i class="fab fa-linkedin-in"></i></a>
                         <a href="mailto:rajaboopathy825@gmail.com" class="icon-button google"><i class="fab fa-google"></i></a>
                         <a href="https://www.instagram.com/boopxth_y" target="_blank" class="icon-button instagram"><i class="fab fa-instagram"></i></a>
                     </div>
                     
-                    <div class="button-greeting-div" style="margin-top: 40px; justify-content: flex-start;">
+                    <div class="button-greeting-div contact-button-div">
                         <!-- Make sure to place a rajaboopathy-resume.pdf file in this folder -->
-                        <a href="Rajaboopathy_Resume2.pdf" target="_blank" class="button">See My Resume</a>
+                        <a href="Rajaboopathy_Resume.pdf" target="_blank" class="button">See My Resume</a>
                     </div>
                 </div>
 
