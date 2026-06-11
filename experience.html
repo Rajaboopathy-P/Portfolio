@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajaboopathy | Portfolio</title>
-    <link rel="icon" href="boopathy ring image.png">
+    <title>Rajaboopathy | Work Experience</title>
+    <meta name="description" content="Explore the professional journey, skills, and projects of Rajaboopathy P, Python FullStack Developer.">
+    <link rel="icon" href="title.png">
     <link rel="stylesheet" href="style.css">
     
     <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
@@ -17,6 +18,11 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('theme') === 'light-theme') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
 
     <!-- Header / Navbar -->
     <header class="header">
@@ -29,7 +35,8 @@
             <li><a href="index.html" class="homei">Home</a></li>
             <li><a href="experience.html" class="xpi">Experience</a></li>
             <li><a href="projects.html" class="projectsi">Projects</a></li>
-            <li><a href="contact.html" class="contacti">Contact and Resume</a></li>
+            <li><a href="about.html" class="skillsi">About</a></li>
+            <li><a href="contact.html" class="contacti">Contact Me</a></li>
             <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
         </ul>
     </header>
@@ -40,7 +47,7 @@
             <div class="exp-main">
                 <div class="exp-image-div">
                     <lottie-player
-                        src="https://assets9.lottiefiles.com/packages/lf20_w51pcehl.json" 
+                        src="./assets/lottie/lf20_w51pcehl.json" 
                         background="transparent"
                         speed="1"
                         style="width: 100%; height: auto; max-width: 500px;"
