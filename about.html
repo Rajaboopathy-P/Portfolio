@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajaboopathy | Portfolio</title>
+    <title>Rajaboopathy | About Me</title>
+    <meta name="description" content="Learn more about Rajaboopathy P, his skills, expertise, and passion for full-stack web development and user experience.">
+    <link rel="icon" href="title.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts for Modern Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+    <script>
+        if (localStorage.getItem('theme') === 'light-theme') {
+            document.body.classList.add('light-theme');
+        }
+    </script>
 
     <!-- Header / Navbar -->
     <header class="header">
@@ -19,38 +33,42 @@
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="menu">
             <li><a href="index.html" class="homei">Home</a></li>
-            <li><a href="about.html" class="skillsi">About</a></li>
-            <li><a href="projects.html" class="projectsi">Projects</a></li>
             <li><a href="experience.html" class="xpi">Experience</a></li>
+            <li><a href="projects.html" class="projectsi">Projects</a></li>
+            <li><a href="about.html" class="skillsi">About</a></li>
             <li><a href="contact.html" class="contacti">Contact Me</a></li>
-            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme">☀️</a></li>
+            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
         </ul>
     </header>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="about-illustration">
-            <!-- Subtle floating glow background element -->
-            <div class="blob-glow float-anim"></div>
-            <!-- Beautiful glass card profile placeholder -->
-            <div class="profile-card glass-panel">
-                <div class="profile-img-placeholder">
-                    <svg viewBox="0 0 24 24" fill="none" class="animate-pulse">
-                        <circle cx="12" cy="8" r="4" stroke="url(#cardGlow)" stroke-width="2"/>
-                        <path d="M4 20C4 16.6863 6.68629 14 10 14H14C17.3137 14 20 16.6863 20 20" stroke="url(#cardGlow)" stroke-width="2" stroke-linecap="round"/>
-                        <defs>
-                            <linearGradient id="cardGlow" x1="0" y1="0" x2="24" y2="24">
-                                <stop offset="0%" stop-color="#00f2fe" />
-                                <stop offset="100%" stop-color="#4facfe" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
+            <div class="blob-glow"></div>
+            <img src="boopa.jpeg" alt="Rajaboopathy" class="profile-img">
         </div>
         <div class="about-content">
-            <h2>About <span class="gradient-text">Me</span></h2>
-            <p>I am a passionate developer with a focus on creating aesthetically pleasing, interactive, and high-performance UI designs. By blending code and design, I create seamless user journeys.</p>
+            <p class="section-subtitle">ABOUT ME</p>
+            <h1>Hi, I’m <span class="gradient-text">Rajaboopathy</span></h1>
+            <p>I’m a Full-Stack Developer (Fresher) passionate about building modern and responsive web applications. I work with Python, Django, HTML, CSS, and JavaScript and enjoy creating clean, user-friendly, and efficient solutions.</p>
+            <p>I focus on improving my skills, learning new technologies, and building projects that solve real-world problems.</p>
+            
+            <div class="about-badges">
+                <span class="badge">Fresher Developer</span>
+                <span class="badge">Project Based Learning</span>
+                <span class="badge">Fast Learner</span>
+                <span class="badge">Open to Opportunities</span>
+                <span class="badge">Web Development</span>
+            </div>
+            
+            <div class="about-bullet-list">
+                <p>🔹 Full-Stack Development</p>
+                <p>🔹 Responsive Web Design</p>
+                <p>🔹 Continuous Learning</p>
+            </div>
+            
+            <p class="about-text">I’m currently looking for opportunities to grow as a developer and contribute to meaningful projects.</p>
+            <a href="contact.html" class="button">Contact Me</a>
         </div>
     </section>
 
