@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script>
+        if (!sessionStorage.getItem('splashShown')) {
+            sessionStorage.setItem('splashShown', 'true');
+            window.location.replace('splash.html');
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajaboopathy | Work Experience</title>
-    <meta name="description" content="Explore the professional journey, skills, and projects of Rajaboopathy P, Python FullStack Developer.">
+    <title>Rajaboopathy | Python FullStack Developer</title>
+    <meta name="description" content="Welcome to the portfolio of Rajaboopathy P, a passionate Python FullStack Developer specializing in building scalable web applications.">
     <link rel="icon" href="title.png">
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- Google Fonts: Montserrat for body, agustina equivalent for logo, Google Sans equivalent for headings -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&family=Caveat:wght@700&display=swap"
+        rel="stylesheet">
+
     <!-- Font Awesome for Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
     <!-- Lottie Player -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
+
 <body>
     <script>
         if (localStorage.getItem('theme') === 'light-theme') {
@@ -37,35 +50,95 @@
             <li><a href="projects.html" class="projectsi">Projects</a></li>
             <li><a href="about.html" class="skillsi">About</a></li>
             <li><a href="contact.html" class="contacti">Contact Me</a></li>
-            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a></li>
+            <li><a href="#" id="theme-toggle" class="theme-switch" title="Toggle Theme"><i class="fas fa-moon"></i></a>
+            </li>
         </ul>
     </header>
 
-    <!-- Experience Section -->
+    <!-- Home Section -->
     <main class="main">
-        <section id="experience" class="exp-section">
-            <div class="exp-main">
-                <div class="exp-image-div">
-                    <lottie-player
-                        src="./assets/lottie/lf20_w51pcehl.json" 
-                        background="transparent"
-                        speed="1"
-                        style="width: 100%; height: auto; max-width: 500px;"
-                        loop
+        <section id="home" class="greet-main">
+            <div class="greeting-main">
+                <div class="greeting-text-div">
+                    <h1 class="greeting-text">Hello<span class="wave-emoji" id="mouth">👋</span></h1>
+                    <p class="greeting-text-p">
+                        I'm <span class="gradient-text">Rajaboopathy</span>. Python FullStack Developer | Passionate
+                        about building scalable web applications.
+                    </p>
+
+                    <div class="social-media-div">
+                        <a href="https://github.com/Rajaboopathy-P" target="_blank" class="icon-button github"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/rajaboopathy-p" target="_blank" class="icon-button linkedin"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:rajaboopathy825@gmail.com" class="icon-button google"><i
+                                class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/boopxth_y" target="_blank" class="icon-button instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div class="button-greeting-div">
+                        <a href="contact.html" class="button">Contact Me</a>
+                        <a href="projects.html" class="button">See My Work</a>
+                    </div>
+                </div>
+
+                <div class="greeting-image-div">
+                    <!-- Lottie animation of a developer working -->
+                    <lottie-player src="./assets/lottie/lf20_tno6cg2w.json"
+                        background="transparent" speed="1" style="width: 100%; height: auto; max-width: 500px;" loop
                         autoplay>
                     </lottie-player>
                 </div>
-                <div class="exp-text-div">
-                    <h1 class="exp-heading">Work Experience</h1>
-                    <p class="exp-text-p">
-                        I am currently a fresher and do not have professional work experience yet. However, I am highly passionate about technology, continuously learning, and actively building my skills through hands-on projects like the ones featured below.
-                    </p>
+            </div>
+        </section>
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h1 class="section-title">Here's what I do</h1>
+            <div class="skills-main">
+                <div class="skills-image-div">
+                    <!-- Lottie animation for skills -->
+                    <lottie-player src="./assets/lottie/lf20_iorpbol0.json"
+                        background="transparent" speed="1" style="width: 100%; height: auto; max-width: 500px;" loop
+                        autoplay>
+                    </lottie-player>
+                </div>
+
+                <div class="skills-text-div">
+                    <h3 class="skills-heading">Full Stack Development</h3>
+
+                    <ul class="dev-icons">
+                        <li class="software-skill-inline" title="HTML5"><i class="devicon-html5-plain"
+                                style="color: #ff2701;"></i></li>
+                        <li class="software-skill-inline" title="CSS3"><i class="devicon-css3-plain"
+                                style="color: #0267ff;"></i></li>
+                        <li class="software-skill-inline" title="JavaScript"><i class="devicon-javascript-plain"
+                                style="color: #faf626;"></i></li>
+                        <li class="software-skill-inline" title="Bootstrap"><i class="devicon-bootstrap-plain"
+                                style="color: hsl(266, 98%, 52%);"></i></li>
+                        <li class="software-skill-inline" title="Python"><i class="devicon-python-plain"
+                                style="color:  #0267ff;"></i></li>
+                        <li class="software-skill-inline" title="Django"><i class="devicon-django-plain"
+                                style="color:  #07cf43;"></i></li>
+                        <li class="software-skill-inline" title="MySQL"><i class="devicon-mysql-plain"
+                                style="color:  #0267ff;"></i></li>
+                        <li class="software-skill-inline" title="SQLite"><i class="devicon-sqlite-plain"
+                                style="color:  #84b0f3;"></i></li>
+                        <li class="software-skill-inline" title="REST API"><i class="fas fa-network-wired"
+                                style="color: #FF5A5F;"></i></li>
+                        <li class="software-skill-inline" title="GIT"><i class="devicon-git-plain"
+                                style="color: #fd5335;"></i></li>
+                    </ul>
+
+                    <div class="skills-bullets">
+                        <p class="skills-text">⚡ Building responsive website front end using HTML, CSS, JavaScript, and
+                            Bootstrap</p>
+                        <p class="skills-text">⚡ Building REST APIs and Backend development using Python and Django</p>
+                        <p class="skills-text">⚡ Database management using MySQL and SQLite</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <!-- Project/Experience Card Section -->
-            
     </main>
 
     <!-- Footer -->
@@ -75,4 +148,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
